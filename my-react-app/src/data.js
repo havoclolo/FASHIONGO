@@ -1,0 +1,104 @@
+export const CATEGORIES = [
+  { name: "Women's Apparel", icon: "apparel", grad: "bg-gradient-to-br from-[#C9A9A0] to-[#8C6E63]", image: "https://www.fashiongo.net/img/pice/img_categories_women.png" },
+  { name: "Shoes", icon: "shoes", grad: "bg-gradient-to-br from-[#BCA37E] to-[#7C6248]", image: "https://www.fashiongo.net/img/pice/img_categories_shoes.png" },
+  { name: "Accessories", icon: "accessories", grad: "bg-gradient-to-br from-[#D9C4A3] to-[#A98B63]", image: "https://www.fashiongo.net/img/pice/img_categories_accessories.png" },
+  { name: "Kids", icon: "kids", grad: "bg-gradient-to-br from-[#E3B7A4] to-[#C97F6B]", image: "https://www.fashiongo.net/img/pice/img_categories_kids.png" },
+  { name: "Jewelry", icon: "jewelry", grad: "bg-gradient-to-br from-[#E6D8B8] to-[#BFA25F]", image: "https://www.fashiongo.net/img/pice/img_categories_jewelry.png" },
+  { name: "Bags", icon: "bags", grad: "bg-gradient-to-br from-[#B79A7C] to-[#6E5641]", image: "https://www.fashiongo.net/img/pice/img_categories_bags.png" },
+  { name: "Beauty", icon: "beauty", grad: "bg-gradient-to-br from-[#DCC9BE] to-[#A98E7E]", image: "https://www.fashiongo.net/img/pice/img_categories_beauty.png" },
+  { name: "Men", icon: "men", grad: "bg-gradient-to-br from-[#9FA79C] to-[#5E665C]", image: "https://www.fashiongo.net/img/pice/img_categories_men.png" },
+  { name: "Home", icon: "home", grad: "bg-gradient-to-br from-[#D8CBB0] to-[#A98F68]", image: "https://www.fashiongo.net/img/pice/img_categories_home.png" },
+  { name: "Lifestyle", icon: "lifestyle", grad: "bg-gradient-to-br from-[#CBBFC9] to-[#8E7F91]", image: "https://www.fashiongo.net/img/pice/img_categories_lifestyle.png" },
+  { name: "Retailer Supplies", icon: "supplies", grad: "bg-gradient-to-br from-[#C7C0B4] to-[#8D8474]", image: "https://www.fashiongo.net/img/pice/img_categories_retailer.png" },
+];
+
+export const BRANDS = [
+  { name: "LOI7", grad: "bg-gradient-to-b from-[#D9D2C6] to-[#B7ADA0]" },
+  { name: "WKENDER LOS ANGLES", grad: "bg-gradient-to-b from-[#7A4A45] to-[#4F2E2B]" },
+  { name: "milk & Honey", grad: "bg-gradient-to-b from-[#E9C9A8] to-[#C99A73]" },
+  { name: "M∧BLE", grad: "bg-gradient-to-b from-[#E4E0D6] to-[#B9AFA0]" },
+  { name: "ZENANA", grad: "bg-gradient-to-b from-[#CBB79A] to-[#8C7052]" },
+  { name: "rareraw", grad: "bg-gradient-to-b from-[#C6D1C2] to-[#8FA089]" },
+];
+
+export const SERVICES = [
+  { title: "Dynamic Net Terms", body: "Buy now and pay in 30, 45, or 60 days — flexible terms approved for your business." },
+  { title: "FG Free Shipping", body: "No subscription, no hidden fees. Free shipping on orders starting at a low minimum." },
+  { title: "Rewards Program", body: "Earn points on qualifying purchases and redeem them straight off your next order." },
+  { title: "Style Match+", body: "Snap a photo of a trend and search the floor visually to find the closest styles fast." },
+];
+
+export const SEARCH_HINTS = ["Plus Size Sets", "Fall Denim", "Beaded Jewelry", "Boho Dresses", "Kids Outerwear"];
+
+export const BREADCRUMB = ["Home", "Accessories"];
+
+export const FAQS = [
+  {
+    question: "How does wholesale ordering work?",
+    answer: "Create an account, browse our collection, and place an order with flexible payment terms designed for retailers.",
+  },
+  {
+    question: "Do you offer low minimums?",
+    answer: "Yes. Many products are available with small retailer-friendly minimums and easy reordering options.",
+  },
+  {
+    question: "Can I shop by category?",
+    answer: "Absolutely. Browse by accessories, jewelry, apparel, gifts, and more to find the right assortment for your store.",
+  },
+];
+
+export const JOIN_CHECKLIST = [
+  "Access to curated product drops and trend-ready assortments",
+  "Fast fulfillment for recurring wholesale orders",
+  "Simple account setup with helpful retailer support",
+];
+
+export const FG_FREE_SHIPPING_PRODUCTS = [
+  { vendor: "Funkryel Atzbranding Limited", title: "Cosbai - Retro Floral Square Pouch", image: "https://fg-image.fashiongo.net/Vendors/wlqfvsfyqb/ProductImage/list/26EEC37BE03C2118DA140C68B75AC7D0/26211729_4abb7d2e-9026-4a5d-9c98-168e8bacda7a.jpg" },
+  { vendor: "Funkryel Atzbranding Limited", title: "Cosbai - Woven Bunny Pattern Zip Pouch", image: "https://fg-image.fashiongo.net/Vendors/sxoin8zqgf/ProductImage/list/AC5CDD4E9011944DE964938DF298A9FC/22564329_72f5af9d-32e0-4fe2-a601-0159cf3d7339.jpg" },
+  { vendor: "Funkryel Atzbranding Limited", title: "Cosbai - Tweed Mini Wrist Pouch", image: "https://fg-image.fashiongo.net/Vendors/hshmazox0w/ProductImage/list/8926B3C020F4B9DF467EAE54737342DD/23534702_46ef67da-891a-4478-963c-ad239320d9d6.jpg" },
+  { vendor: "Funkryel Atzbranding Limited", title: "Cosbai - Floral Jacquard Drawstring Mini Pouch", image: "https://fg-image.fashiongo.net/Vendors/xs9ghc0lv8/ProductImage/list/CE779EDAB281FBEC4E19978EE318A61B/19344211_8acb71d3-2c39-43ee-abd5-bc9f925298b7.jpg" },
+];
+
+export const NEW_VENDORS = [
+  { name: "MYRABAG", minimum: "$250 minimum", image: "https://d2njprwt6vp5kv.cloudfront.net/vendor/39001/main/091784800244319.jpg" },
+  { name: "Kent Island Gifts", minimum: "No minimum", image: "https://d2njprwt6vp5kv.cloudfront.net/vendor/39198/main/vs1787584821896.jpg" },
+  { name: "Looking Sharp LLC", minimum: "$150 minimum", image: "https://d2njprwt6vp5kv.cloudfront.net/vendor/39117/main/vs1786378258663.jpg" },
+  { name: "WineOnion", minimum: "$100 minimum", image: "https://d2njprwt6vp5kv.cloudfront.net/vendor/39144/main/accessories1786724138125.jpg" },
+  { name: "Aminco", minimum: "$150 minimum", image: "https://d2njprwt6vp5kv.cloudfront.net/vendor/38810/main/accessories1785351237481.jpg" },
+];
+
+export const SUBCATEGORIES = [
+  { name: "Bag Accessories", icon: "bag", image: "https://d2njprwt6vp5kv.cloudfront.net/category/Accessories-BagAccessories.jpg" },
+  { name: "Belts", icon: "belt", image: "https://d2njprwt6vp5kv.cloudfront.net/category/Accessories-Belts.jpg" },
+  { name: "Gloves & Mittens", icon: "gloves", image: "https://d2njprwt6vp5kv.cloudfront.net/category/Accessories-GlovesMittens.jpg" },
+  { name: "Hair Accessories", icon: "hair", image: "https://d2njprwt6vp5kv.cloudfront.net/category/Accessories-HairAccessories.jpg" },
+  { name: "Hats", icon: "hat", image: "https://d2njprwt6vp5kv.cloudfront.net/category/Accessories-Hats.jpg" },
+  { name: "Key Chains", icon: "keychain", image: "https://d2njprwt6vp5kv.cloudfront.net/category/Accessories-KeyChains.jpg" },
+  { name: "Patches", icon: "patch", image: "https://d2njprwt6vp5kv.cloudfront.net/category/Accessories-Patches.jpg" },
+  { name: "Scarves", icon: "scarf", grad: "bg-gradient-to-br from-[#E6D9C4] to-[#B5845A]" },
+];
+
+export const JEWELRY_SUBCATEGORIES = [
+  { name: "Necklaces", icon: "jewelry", grad: "bg-gradient-to-br from-[#E8D3C7] to-[#B17E63]" },
+  { name: "Earrings", icon: "earring", grad: "bg-gradient-to-br from-[#E6E1D2] to-[#A59A83]" },
+  { name: "Bracelets", icon: "bracelet", grad: "bg-gradient-to-br from-[#E5D0C0] to-[#B17F67]" },
+  { name: "Rings", icon: "crown", grad: "bg-gradient-to-br from-[#E7D7C6] to-[#A8927A]" },
+  { name: "Anklets", icon: "keychain", grad: "bg-gradient-to-br from-[#D8D7E9] to-[#7C7A8D]" },
+  { name: "Sets", icon: "jewelryset", grad: "bg-gradient-to-br from-[#F2E8D8] to-[#C6A986]" },
+];
+
+export const JEWELRY_FAQS = [
+  {
+    question: "What metals do you offer?",
+    answer: "We carry gold-plated, sterling silver, stainless steel, and brass jewelry. All pieces are wholesale-friendly and competitively priced.",
+  },
+  {
+    question: "Are there hypoallergenic options?",
+    answer: "Yes! Many of our sterling silver and surgical steel pieces are perfect for sensitive skin. Filter by material when browsing.",
+  },
+  {
+    question: "What are your bulk order minimums?",
+    answer: "Most jewelry items start at low minimums — typically $150–$300 for mixed assortments, making it easy to test new styles.",
+  },
+];
