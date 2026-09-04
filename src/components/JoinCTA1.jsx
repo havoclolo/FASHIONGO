@@ -1,4 +1,3 @@
-import React from "react";
 import { JOIN_CHECKLIST } from "../data";
 
 export default function JoinCTA() {

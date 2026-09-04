@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { SUBCATEGORIES } from "../data";
 import CategoryIcon1 from "./CategoryIcon1";
 
-export default function SubcategoryStrip() {
+export default function SubcategoryStrip({ categories = SUBCATEGORIES, portrait = false }) {
   const trackRef = useRef(null);
   const scroll = (dir) => trackRef.current?.scrollBy({ left: dir * 260, behavior: "smooth" });
 
@@ -21,9 +21,9 @@ export default function SubcategoryStrip() {
           ref={trackRef}
           className="flex flex-1 gap-5 overflow-x-auto scroll-smooth pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
-          {SUBCATEGORIES.map((c) => (
-            <div key={c.name} className="w-[170px] flex-none text-center transition-transform duration-200 hover:-translate-y-1">
-              <div className={`relative h-[170px] overflow-hidden rounded-sm ${c.image ? "" : c.grad}`} style={c.image ? { backgroundImage: `url('${c.image}')`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}}>
+          {categories.map((c) => (
+            <div key={c.name} className={`${portrait ? "w-[140px]" : "w-[170px]"} flex-none text-center transition-transform duration-200 hover:-translate-y-1`}>
+              <div className={`relative ${portrait ? "h-[180px]" : "h-[170px]"} overflow-hidden rounded-sm ${c.image ? "" : c.grad}`} style={c.image ? { backgroundImage: `url('${c.image}')`, backgroundSize: 'cover', backgroundPosition: 'center' } : {}}>
                 {!c.image && (
                   <div className="absolute inset-0 flex items-center justify-center">
                     <CategoryIcon1 type={c.icon} />

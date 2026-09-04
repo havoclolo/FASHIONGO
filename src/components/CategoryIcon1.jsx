@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function CategoryIcon({ type, className = "text-white/85" }) {
   const s = { stroke: "currentColor", fill: "none", strokeWidth: 1.6, strokeLinecap: "round", strokeLinejoin: "round" };
   const wrap = (children, size = 42) => (

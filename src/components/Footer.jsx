@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from "react";
-
 const LINK_COLUMNS = [
   { title: "Company", items: ["About Wholesale", "Sell On FASHIONGO", "Newsroom", "Careers"] },
   { title: "Support", items: ["Contact Us", "Help Center", "Blog", "Show Info"] },
@@ -10,12 +8,11 @@ const OUTLINE_BTN =
   "rounded-sm border-2 border-ink px-4 py-2 text-xs font-bold transition-colors hover:bg-ink hover:text-white";
 
 export default function Footer() {
-  const [year, setYear] = useState(2026);
-  useEffect(() => setYear(new Date().getFullYear()), []);
+  const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-footer">
-      <div className="mx-auto max-w-6xl px-6 pb-6 pt-14">
+    <footer className="block w-full bg-footer">
+      <div className="mx-auto w-full max-w-6xl px-6 pb-6 pt-14">
         <div className="mb-10 grid gap-10 sm:grid-cols-2 md:grid-cols-5">
           <div>
             <span className="font-serif text-xl font-bold">FASHIONGO</span>

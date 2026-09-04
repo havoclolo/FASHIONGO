@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import { BRANDS } from "../data";
 
 function HeroBanner() {
@@ -19,7 +19,7 @@ function HeroBanner() {
 
   return (
     <section
-      className="relative flex min-h-[460px] items-center bg-cover bg-center transition-all duration-700"
+      className="relative flex w-full min-h-[460px] items-center bg-cover bg-center transition-all duration-700"
       style={{
         backgroundImage: `linear-gradient(100deg,rgba(30,26,22,0.72) 0%,rgba(30,26,22,0.38) 45%,rgba(30,26,22,0.08) 70%), url('${banners[bannerIndex]}')`,
       }}

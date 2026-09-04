@@ -1,15 +1,13 @@
-import React from "react";
 import { BREADCRUMB } from "../data";
-import CategoryIcon1 from "./CategoryIcon1";
 
-export default function CategoryHero({ heading = "Wholesale Accessories", subtext = "Get everything your store needs", heroImage = "https://d2njprwt6vp5kv.cloudfront.net/category/background/bg_category_accessories.png" }) {
+export default function CategoryHero({ breadcrumb = BREADCRUMB, heading = "Wholesale Accessories", subtext = "Get everything your store needs", heroImage = "https://d2njprwt6vp5kv.cloudfront.net/category/background/bg_category_accessories.png" }) {
   return (
-    <section className="bg-mint">
+    <section className="block w-full bg-mint">
       <div className="mx-auto max-w-6xl px-6 py-3 text-sm text-slate">
-        {BREADCRUMB.map((crumb, i) => (
+        {breadcrumb.map((crumb, i) => (
           <span key={crumb}>
             {i > 0 && <span className="mx-2">›</span>}
-            <span className={i === BREADCRUMB.length - 1 ? "font-semibold text-ink" : ""}>{crumb}</span>
+            <span className={i === breadcrumb.length - 1 ? "font-semibold text-ink" : ""}>{crumb}</span>
           </span>
         ))}
       </div>

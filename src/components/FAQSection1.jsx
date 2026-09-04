@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FAQS } from "../data";
 
-export default function FAQSection() {
+export default function FAQSection({ faqs = FAQS }) {
   const [open, setOpen] = useState(null);
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-14">
       <h2 className="mb-6 font-serif text-3xl">Frequently Asked Questions</h2>
       <div className="border-t border-line">
-        {FAQS.map((f, i) => {
+        {faqs.map((f, i) => {
           const isOpen = open === i;
           return (
             <div key={f.question} className="border-b border-line">

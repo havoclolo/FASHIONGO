@@ -1,4 +1,3 @@
-import React from "react";
 import { CATEGORIES } from "../data";
 
 /** Simple original line icons used on the photo tiles below. */

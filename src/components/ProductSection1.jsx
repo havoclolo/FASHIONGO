@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { FG_FREE_SHIPPING_PRODUCTS } from "../data";
 
 function ProductCard({ product }) {
@@ -13,7 +13,7 @@ function ProductCard({ product }) {
         <div className="mb-1.5 text-[13px] text-slate">{product.title}</div>
         <div className="flex items-center gap-1.5 text-[12px] font-medium text-teal">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><circle cx="11" cy="11" r="7" /><path d="M21 21l-4-4" /></svg>
-          FG Free Shipping
+          {product.shippingLabel || "FG Free Shipping"}
         </div>
       </div>
     </div>
@@ -25,6 +25,7 @@ export default function ProductSection({
   subtitle = "",
   viewMore = true,
   products = FG_FREE_SHIPPING_PRODUCTS,
+  shippingLabel = "FG Free Shipping",
 }) {
   const trackRef = useRef(null);
   const scroll = (dir) => trackRef.current?.scrollBy({ left: dir * 240, behavior: "smooth" });
@@ -56,7 +57,7 @@ export default function ProductSection({
           className="flex flex-1 gap-5 overflow-x-auto scroll-smooth pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {(products || []).map((p, i) => (
-            <ProductCard key={i} product={p} />
+            <ProductCard key={i} product={{ ...p, shippingLabel }} />
           ))}
         </div>
 
